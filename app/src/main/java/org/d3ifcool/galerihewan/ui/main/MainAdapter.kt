@@ -1,7 +1,10 @@
+package org.d3ifcool.galerihewan.ui.main
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import org.d3ifcool.galerihewan.databinding.ListItemBinding
+import org.d3ifcool.galerihewan.model.Hewan
 
 class MainAdapter(private val data: List<Hewan>) :
     RecyclerView.Adapter<MainAdapter.ViewHolder>() {
@@ -12,7 +15,6 @@ class MainAdapter(private val data: List<Hewan>) :
             namaTextView.text = hewan.name
             latinTextView.text = hewan.nameLatin
             imageView.setImageResource(hewan.imageResId)
-            jenisTextView.text = hewan.jenis
         }
     }
 
